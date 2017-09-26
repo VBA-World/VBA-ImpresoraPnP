@@ -9,9 +9,9 @@ ImpresoraPnP es un mólulo de clase que debe ser agregado a su proyecto VBA y lu
 ```VB.net
 Public Sub simularImpresiónDeFactura()
   Dim equipoFiscal as New ImpresoraPnP
+  equipoFiscal.Definir(Puerto:=1,Tipo:=PF300,ManejaGaveta:=False)
+  
   With equipoFiscal
-    .Iniciar(Puerto:=1,Tipo:=PF300,ManejaGaveta:=False)
-    
     .Factura(Nombre:="Pedro Pérez", RIF:="YXXXXXXXXX")
     Dim i as Long
     For i=1 To 3

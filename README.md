@@ -5,3 +5,9 @@ Se puede imprimir facturas, notas de crédito, reportes Z y demás desde cualqui
 
 # Modo de uso
 ImpresoraPnP es un mólulo de clase que debe ser agregado a su proyecto VBA y luego escribir las rutinas como más le convenga
+
+```VB.net
+Public Sub imprimirFactura()
+  Dim equipoFiscal As New ImpresoraPnP
+End Sub
+```
